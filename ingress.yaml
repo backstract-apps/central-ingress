@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /bold-mayer-af0cbaac9c1311efb0410242c0a8900371/
+            pathType: Prefix
+            backend:
+              service:
+                name: gubernat-coll-298b32c61ae24cc2a47ac0f1914ff13a-srv
+                port:
+                  number: 80
+          - path: /busy-rekha-d6a478fa9c2e11ef9b7f0242c0a8b00326/
+            pathType: Prefix
+            backend:
+              service:
+                name: novostack-crm-coll-63ed80bf3d4541e6b4e4948aff203e34-srv
+                port:
+                  number: 80
+          - path: /bold-dev-be7000749c3d11efb2930242c0a8b00333/
+            pathType: Prefix
+            backend:
+              service:
+                name: presume-coll-d96f6e906428497c9354d9cdf7b847ca-srv
+                port:
+                  number: 80
+          
+
