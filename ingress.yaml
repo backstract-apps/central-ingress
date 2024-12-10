@@ -1,0 +1,68 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /great-goldberg-1f0afcf8a64e11ef83ba7618e95f26ea24/
+            pathType: Prefix
+            backend:
+              service:
+                name: string-coll-a3bc9ca3f92c449b8b8d1802f16503f6-srv
+                port:
+                  number: 80
+          - path: /beautiful-euler-286b8698ac8711efb75f0242ac12000572/
+            pathType: Prefix
+            backend:
+              service:
+                name: airbnb-crm-coll-94530da73ad14d45905cd66b794d120b-srv
+                port:
+                  number: 80
+          - path: /priceless-antonelli-e7b05a6eac8d11efa0260242ac12000287/
+            pathType: Prefix
+            backend:
+              service:
+                name: maut123-coll-057e3731199143ecac80500e418cea8b-srv
+                port:
+                  number: 80
+          - path: /mystifying-gopal-d0d61104b24511efb99c0242ac1a000254/
+            pathType: Prefix
+            backend:
+              service:
+                name: string-coll-057e3731199143ecac80500e418cea8b-srv
+                port:
+                  number: 80
+          - path: /agitated-raman-73221c46b25a11efacef0242ac12000584/
+            pathType: Prefix
+            backend:
+              service:
+                name: agthree-coll-212ee636e0c34dadb1671e928c433da7-srv
+                port:
+                  number: 80
+          - path: /adoring-sneha-cc2ae504b30711efac320242ac12000338/
+            pathType: Prefix
+            backend:
+              service:
+                name: custom-code-req-coll-ffd9856ca04d45dab0a6c54373ad3b26-srv
+                port:
+                  number: 80
+          - path: /stoic-chandrasekhar-0080aa9ab70511ef908f0242ac12000549/
+            pathType: Prefix
+            backend:
+              service:
+                name: chintupana-coll-571f541f76154643887e90d771efbc6a-srv
+                port:
+                  number: 80
+          
+
