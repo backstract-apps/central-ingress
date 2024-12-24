@@ -1,0 +1,145 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /great-goldberg-1f0afcf8a64e11ef83ba7618e95f26ea24/
+            pathType: Prefix
+            backend:
+              service:
+                name: string-coll-a3bc9ca3f92c449b8b8d1802f16503f6-srv
+                port:
+                  number: 80
+          - path: /beautiful-euler-286b8698ac8711efb75f0242ac12000572/
+            pathType: Prefix
+            backend:
+              service:
+                name: airbnb-crm-coll-94530da73ad14d45905cd66b794d120b-srv
+                port:
+                  number: 80
+          - path: /priceless-antonelli-e7b05a6eac8d11efa0260242ac12000287/
+            pathType: Prefix
+            backend:
+              service:
+                name: maut123-coll-057e3731199143ecac80500e418cea8b-srv
+                port:
+                  number: 80
+          - path: /mystifying-gopal-d0d61104b24511efb99c0242ac1a000254/
+            pathType: Prefix
+            backend:
+              service:
+                name: string-coll-057e3731199143ecac80500e418cea8b-srv
+                port:
+                  number: 80
+          - path: /agitated-raman-73221c46b25a11efacef0242ac12000584/
+            pathType: Prefix
+            backend:
+              service:
+                name: agthree-coll-212ee636e0c34dadb1671e928c433da7-srv
+                port:
+                  number: 80
+          - path: /adoring-sneha-cc2ae504b30711efac320242ac12000338/
+            pathType: Prefix
+            backend:
+              service:
+                name: custom-code-req-coll-ffd9856ca04d45dab0a6c54373ad3b26-srv
+                port:
+                  number: 80
+          - path: /stoic-chandrasekhar-0080aa9ab70511ef908f0242ac12000549/
+            pathType: Prefix
+            backend:
+              service:
+                name: chintupana-coll-571f541f76154643887e90d771efbc6a-srv
+                port:
+                  number: 80
+          - path: /stoic-vaishali-a74a415eb79811ef97f87618e95f26ea90/
+            pathType: Prefix
+            backend:
+              service:
+                name: test31-coll-98fedf20fbda4c589bbf4df0491143d7-srv
+                port:
+                  number: 80
+          - path: /admiring-spence-af93e3f2b94511ef9a0c0242ac1200054/
+            pathType: Prefix
+            backend:
+              service:
+                name: medium-cms-coll-aa36fcdd68de405e9141a5afdfcbcf35-srv
+                port:
+                  number: 80
+          - path: /elated-blackwell-482e3aa8bea611ef95970242ac12000546/
+            pathType: Prefix
+            backend:
+              service:
+                name: first-collections-api-coll-1cc28c4bac464e398ba61ca43f8a430d-srv
+                port:
+                  number: 80
+          - path: /frosty-wilson-ec8ac27ebeba11efb2290242ac12000522/
+            pathType: Prefix
+            backend:
+              service:
+                name: fast-api-coll-d76c593cf1db40f392182f05c1b7d72b-srv
+                port:
+                  number: 80
+          - path: /flamboyant-archimedes-c6c318cabed811ef8b0f0242ac12000548/
+            pathType: Prefix
+            backend:
+              service:
+                name: first-api-coll-f8e02b7553194e04ba5adda4ed3dcd73-srv
+                port:
+                  number: 80
+          - path: /distracted-colden-ee2f015abedb11ef97320242ac12000538/
+            pathType: Prefix
+            backend:
+              service:
+                name: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac-srv
+                port:
+                  number: 80
+          - path: /nostalgic-omkar-0b98cde4c12911efa4030242ac1200055/
+            pathType: Prefix
+            backend:
+              service:
+                name: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b-srv
+                port:
+                  number: 80
+          - path: /hardcore-pooja-e4aa7a16c1c811ef8cc40242ac12000568/
+            pathType: Prefix
+            backend:
+              service:
+                name: coreapi-coll-e04acc675e654d99a77096de20c90c8a-srv
+                port:
+                  number: 80
+          - path: /vibrant-bohr-01a3c4bac1ce11ef89340242ac12000546/
+            pathType: Prefix
+            backend:
+              service:
+                name: fastapi-coll-756b8bf8629240c2a68163b2c8941f8a-srv
+                port:
+                  number: 80
+          - path: /stupefied-perlman-8780a87ac1d611ef96380242ac12000568/
+            pathType: Prefix
+            backend:
+              service:
+                name: fastapi-coll-534294973cf54472a3373055c5275a2f-srv
+                port:
+                  number: 80
+          - path: /fervent-fermat-dff08c18c1e111ef9b270242ac12000559/
+            pathType: Prefix
+            backend:
+              service:
+                name: testing-coll-e3d83f51031c481d99d829b22080a13a-srv
+                port:
+                  number: 80
+          
+
