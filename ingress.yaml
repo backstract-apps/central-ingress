@@ -1,0 +1,75 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /festive-sagar-b1c9d954c90511ef920d0242ac1200054/
+            pathType: Prefix
+            backend:
+              service:
+                name: list-and-dic-coll-304d0c851d7f498fa687a569d0933973-srv
+                port:
+                  number: 80
+          - path: /trusting-lichterman-df914912c90511ef9f5b0242ac1200056/
+            pathType: Prefix
+            backend:
+              service:
+                name: project0001-coll-d4f1137feb854dc6a58575546a17acbf-srv
+                port:
+                  number: 80
+          - path: /affectionate-meitner-6902d5fcc9a211ef81390242ac12000491/
+            pathType: Prefix
+            backend:
+              service:
+                name: employeecollection-coll-4af80c20c5764b099f36b0504b29c9a6-srv
+                port:
+                  number: 80
+          - path: /serene-vivaan-da556db0c9c411efbbb30242ac12000483/
+            pathType: Prefix
+            backend:
+              service:
+                name: users-coll-c8900380827547daa6b8b6cff55dd767-srv
+                port:
+                  number: 80
+          - path: /musing-lovelace-ac8cff2cc9c611ef94870242ac18000336/
+            pathType: Prefix
+            backend:
+              service:
+                name: test31-coll-98fedf20fbda4c589bbf4df0491143d7-srv
+                port:
+                  number: 80
+          - path: /quirky-johnson-f5320774c9d811efbee00242ac12000421/
+            pathType: Prefix
+            backend:
+              service:
+                name: novostackproject-coll-4f0595b93d7245a38195ffbd413130c7-srv
+                port:
+                  number: 80
+          - path: /laughing-ravi-416676ecc9ee11efba1b0242ac12000441/
+            pathType: Prefix
+            backend:
+              service:
+                name: novoproject-coll-becaafba0a5441018399338c320e625d-srv
+                port:
+                  number: 80
+          - path: /romantic-lamarr-a724476ec9f011ef8d1f0242ac12000496/
+            pathType: Prefix
+            backend:
+              service:
+                name: novoproject01-coll-50f5e406caba45578954240de28ee7e8-srv
+                port:
+                  number: 80
+          
+
