@@ -1,0 +1,47 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /compassionate-babbage-6a3eceb2ccdb11efbacf0242ac12000421/
+            pathType: Prefix
+            backend:
+              service:
+                name: merchant-slabs-coll-915bf7936ed24dd3b176896eab4f32fe-srv
+                port:
+                  number: 80
+          - path: /nice-aditya-69e8ee1cccdf11efbacf0242ac12000482/
+            pathType: Prefix
+            backend:
+              service:
+                name: merchant-slabs-coll-d79cbacbd78a4103b70bee3689814092-srv
+                port:
+                  number: 80
+          - path: /stoic-hodgkin-14577116d26711efa7b60242ac12000410/
+            pathType: Prefix
+            backend:
+              service:
+                name: circus-apis-coll-f1d07cdb46a44cf9be251b048854ddcc-srv
+                port:
+                  number: 80
+          - path: /infallible-rishi-61b9f382dca011ef81c70242ac12000213/
+            pathType: Prefix
+            backend:
+              service:
+                name: users-coll-65f984e537454625a6c09ade35a3effa-srv
+                port:
+                  number: 80
+          
+
