@@ -1,0 +1,124 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /compassionate-babbage-6a3eceb2ccdb11efbacf0242ac12000421/
+            pathType: Prefix
+            backend:
+              service:
+                name: merchant-slabs-coll-915bf7936ed24dd3b176896eab4f32fe-srv
+                port:
+                  number: 80
+          - path: /nice-aditya-69e8ee1cccdf11efbacf0242ac12000482/
+            pathType: Prefix
+            backend:
+              service:
+                name: merchant-slabs-coll-d79cbacbd78a4103b70bee3689814092-srv
+                port:
+                  number: 80
+          - path: /stoic-hodgkin-14577116d26711efa7b60242ac12000410/
+            pathType: Prefix
+            backend:
+              service:
+                name: circus-apis-coll-f1d07cdb46a44cf9be251b048854ddcc-srv
+                port:
+                  number: 80
+          - path: /infallible-rishi-61b9f382dca011ef81c70242ac12000213/
+            pathType: Prefix
+            backend:
+              service:
+                name: users-coll-65f984e537454625a6c09ade35a3effa-srv
+                port:
+                  number: 80
+          - path: /determined-lehmann-d5bfba14de2611ef9f910242ac12000218/
+            pathType: Prefix
+            backend:
+              service:
+                name: users-coll-05d38d255a1842c2aa5fba3614db71e9-srv
+                port:
+                  number: 80
+          - path: /vigilant-isha-91cb3878de4511efaaf90242ac1200048/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-9d26c917633d441db2fa15a0e9c678be-srv
+                port:
+                  number: 80
+          - path: /keen-mcclintock-706dbaccdeed11ef9e510242ac18000231/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5ca1d5baf7284462ba82e6808ab1b3d4-srv
+                port:
+                  number: 80
+          - path: /amazing-curie-b7d9fd02e21d11efa79e0242ac12000417/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-2fdc10825cc94f45a7110f9ed03ccf7c-srv
+                port:
+                  number: 80
+          - path: /kind-hopper-a723339ae2f211ef98ef0242ac12000459/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-1c512ee817f142b8bd7eeca95913f50c-srv
+                port:
+                  number: 80
+          - path: /naughty-kailash-1184f234e47c11efb8910242ac12000390/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-3793243a4f5a4e0fa84a5389e4ae97da-srv
+                port:
+                  number: 80
+          - path: /adoring-kalam-7a643470e47e11ef87cf0242ac18000555/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5e9553da218347a4912c7eb3f17d2189-srv
+                port:
+                  number: 80
+          - path: /determined-ptolemy-4ef4ed7ae49211ef87a70242ac18000495/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-3793243a4f5a4e0fa84a5389e4ae97-srv
+                port:
+                  number: 80
+          - path: /recursing-clarke-e5612c78e4bb11efa0690242ac18000484/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-2595e4d55e55464dbe4f13e77bbe91e1-srv
+                port:
+                  number: 80
+          - path: /condescending-radhika-61fc920ae54711efa1620242ac12000263/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-620de6fab31746c38f0bd0b44671b9b1-srv
+                port:
+                  number: 80
+          - path: /competent-durga-efa7cc0ae5d811efbe8e0242ac12000423/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-4992f97b82df461ab66b470955e9100a-srv
+                port:
+                  number: 80
+          
+
