@@ -1,0 +1,82 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /interesting-einstein-64b6bac6e93311ef95300242ac12000392/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-cc7e2b3fc93243f3bff050d88a3bd6fa-srv
+                port:
+                  number: 80
+          - path: /flamboyant-surbhi-71e4cefee93311ef95300242ac12000381/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-e959ec02310b49f7b085e707c04f0af0-srv
+                port:
+                  number: 80
+          - path: /epic-maxwell-14577c12e93511ef95300242ac12000375/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5ca1d5baf7284462ba82e6808ab1b3d4-srv
+                port:
+                  number: 80
+          - path: /sweet-ardinghelli-f24bd2d4e93511ef95300242ac12000374/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-fccdd5732ef74bc69ea5a692221ebe69-srv
+                port:
+                  number: 80
+          - path: /quizzical-vani-8f7685b8e93611ef95300242ac12000332/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5e9553da218347a4912c7eb3f17d2189-srv
+                port:
+                  number: 80
+          - path: /ecstatic-savita-79baae58e93a11ef95300242ac12000353/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-ad74d9ea0d8b45b79206896002d7d6ec-srv
+                port:
+                  number: 80
+          - path: /blissful-rajat-cf555b74e93a11ef95300242ac12000394/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-1c512ee817f142b8bd7eeca95913f50c-srv
+                port:
+                  number: 80
+          - path: /infallible-rosalind-3a5d813cea1011efab560242ac12000537/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c28454e4c2da498daef4965bd427537c-srv
+                port:
+                  number: 80
+          - path: /loving-anil-643a293aea2211ef92f00242ac18000237/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c28454e4c2da498daef4965bd427537c-srv
+                port:
+                  number: 80
+          
+
