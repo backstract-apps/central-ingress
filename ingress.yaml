@@ -1,0 +1,145 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /optimistic-swirles-5a7ab6222b0d11f0a4202ece388498555/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-0faa811f2c4945df85d47106971a86af-srv
+                port:
+                  number: 80
+          - path: /angry-meera-0aa634f0274311f0bb78ca7b5c6d2fdc22/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-0f069a686e7b49d6afbc721b9f66c46e-srv
+                port:
+                  number: 80
+          - path: /sharp-yash-d6a07e902b3411f08ecf56900c19d12e98/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-25c5eaed76c7426c97caa597b15fd9e9-srv
+                port:
+                  number: 80
+          - path: /trusting-wilson-cfb8a8562b1011f0a15126fc18aec1d387/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-8b2685c3fe704528bcf3d912efbb677f-srv
+                port:
+                  number: 80
+          - path: /beautiful-raj-e261df98277f11f08f1c126d575b8e5a10/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c127f3143f174d9889fa86dec10377c7-srv
+                port:
+                  number: 80
+          - path: /sad-deepika-f4b8c1de2b3a11f0974c56900c19d12e19/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-44ccbe0a0def48a6ae5985c4571d98c8-srv
+                port:
+                  number: 80
+          - path: /festive-rosalind-7f49297c29ad11f0881692ddec23394d31/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-6f35fc1d31874cf09f5ff4672dc29c01-srv
+                port:
+                  number: 80
+          - path: /magical-shirley-b973cc8e2b3711f0979c56900c19d12e43/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c3337907c11e48d9a44a05bbb6b3950a-srv
+                port:
+                  number: 80
+          - path: /thirsty-gauri-67d8f9882bfc11f09b7856bb03bf0fe971/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-192f3dbf331a4d9fbe32ca69b0e60983-srv
+                port:
+                  number: 80
+          - path: /sleepy-aarav-0587ad382c1a11f0b33ceae58d65af9536/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-dc380874abca450c936a4082dd72f2c0-srv
+                port:
+                  number: 80
+          - path: /funny-yash-4bd151a02c1411f0aa3eeae58d65af9540/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-7b7cbfbc91ec4ff7a667c396eeb7b3c8-srv
+                port:
+                  number: 80
+          - path: /jolly-sanjay-62158ca82c1711f0a97feae58d65af9559/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f91d5b156c0d40989d438a1a40f2678d-srv
+                port:
+                  number: 80
+          - path: /determined-tara-0ba9fac82c1e11f091bbeae58d65af9575/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-81a49931179a40deb11aa33b1788df53-srv
+                port:
+                  number: 80
+          - path: /gallant-rosalind-9ed604102c2111f0bd35eae58d65af9581/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-47093d9c7c8a42cd8509ae8efd3b1846-srv
+                port:
+                  number: 80
+          - path: /flamboyant-edison-03eb4c2c2cc011f0a7ee8ac91bc6429c26/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f7804fd5c19446cdb68d0e10a92491a0-srv
+                port:
+                  number: 80
+          - path: /compassionate-dev-329d95622cc411f0b5658ac91bc6429c1/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-9d79c1630d2740cfa5b1c965d694125c-srv
+                port:
+                  number: 80
+          - path: /pensive-babbage-0db2ee2a2ccc11f088c18ac91bc6429c21/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-ba76344ba37745b5bdf635d826e48f90-srv
+                port:
+                  number: 80
+          - path: /mystifying-cori-15eef52a2cd611f0a3908ac91bc6429c32/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-7ddf983de38e4548b0c329dffcd30e7d-srv
+                port:
+                  number: 80
+          
+
