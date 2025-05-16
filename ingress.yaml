@@ -1,0 +1,54 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstract-dev-ingress-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.backstract.io
+      http:
+        paths:
+          - path: /flamboyant-wilson-8aab382c319711f08f4f4605ebb96a5b17/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5d8dbdd0b15745b08d4e9b1b67321897-srv
+                port:
+                  number: 80
+          - path: /optimistic-durga-58feae4a324a11f0b984124d9a3e836326/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-4ee674b43fe74d3ca8be64dfe33768ae-srv
+                port:
+                  number: 80
+          - path: /goofy-jaya-17b5166a325c11f09672124d9a3e836356/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5d8456dc8b5146a98000b50cd1572612-srv
+                port:
+                  number: 80
+          - path: /brave-shalini-891ec14c324911f0affa124d9a3e836337/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-d25c4ffc372246a281d278d0395cfa0f-srv
+                port:
+                  number: 80
+          - path: /magical-shreya-969463f4318611f086aa4605ebb96a5b9/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a6df871043ec4765a134444b3707ba1b-srv
+                port:
+                  number: 80
+          
+
