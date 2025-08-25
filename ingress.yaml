@@ -1,0 +1,453 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-srv-apps-dev
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.mayson.dev
+      http:
+        paths:
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-central-1-backstractelb-a895e1-coll-5b98b5c0d71d41b08c355adee1ed0f96/
+            pathType: Prefix
+            backend:
+              service:
+                name: sweet-aarav-307eb329f0-srv
+                port:
+                  number: 80
+          - path: /eu-central-1-backstractelb-a895e1-coll-5b98b5c0d71d41b08c355adee1ed0f96/
+            pathType: Prefix
+            backend:
+              service:
+                name: sweet-aarav-307eb329f0-srv
+                port:
+                  number: 80
+          - path: /eu-central-1-backstractelb-a895e1-coll-5b98b5c0d71d41b08c355adee1ed0f96/
+            pathType: Prefix
+            backend:
+              service:
+                name: sweet-aarav-307eb329f0-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-west-2-backstractelb-a7e9f6-coll-b185da5a0c834302a846869567eb437a/
+            pathType: Prefix
+            backend:
+              service:
+                name: jovial-aarohi-87a3a121c8-srv
+                port:
+                  number: 80
+          - path: /eu-central-1-backstractelb-a895e1-coll-5b98b5c0d71d41b08c355adee1ed0f96/
+            pathType: Prefix
+            backend:
+              service:
+                name: sweet-aarav-307eb329f0-srv
+                port:
+                  number: 80
+          - path: /eu-central-1-backstractelb-a895e1-coll-5b98b5c0d71d41b08c355adee1ed0f96/
+            pathType: Prefix
+            backend:
+              service:
+                name: sweet-aarav-307eb329f0-srv
+                port:
+                  number: 80
+          - path: /eu-central-1-backstractelb-a895e1-coll-5b98b5c0d71d41b08c355adee1ed0f96/
+            pathType: Prefix
+            backend:
+              service:
+                name: sweet-aarav-307eb329f0-srv
+                port:
+                  number: 80
+          
+
